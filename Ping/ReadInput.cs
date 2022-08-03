@@ -23,13 +23,17 @@ namespace Ping
     public class ReadInput
     {
         /// <summary>
-        /// A Method to retrieve the URL's/IP's from a CSV file
+        /// Method to fetch the CSV file of URL inputs
         /// </summary>
-        /// <returns>List<string> of URL's/IP's</returns>
-        public List<string> getInput()
-        {
-            String line;
+        /// <param name="tb">TextBox to display the file path</param>
+        /// <param name="tmr">Timer - increments progress bar</param>
+        /// <returns>List<string></returns>
+        public List<string> getInput(TextBox tb, Timer tmr)        {
+            
             List<string> list = new List<string>();
+            TextBox textBox1 = tb;
+            Timer timer = tmr;
+            
 
             var csvConfig = new CsvConfiguration(CultureInfo.CurrentCulture)
             {
@@ -50,6 +54,8 @@ namespace Ping
                 {
                     //Select the CSV file from the File Picker
                     string selectedFileName = openFileDialog1.FileName;
+                    //Display the filepath in textbox2
+                    textBox1.Text = selectedFileName;
                     //Pass the file path and file name to the StreamReader constructor
                     StreamReader sr = new StreamReader(selectedFileName);
 
@@ -66,8 +72,11 @@ namespace Ping
                             list.Add(value);
                         }
                     }
+                    //Start the timer to increment the progress bar
+                    timer.Start();
+
                     //close the file
-                    sr.Close();
+                    sr.Close();                    
                 }
 
             }
