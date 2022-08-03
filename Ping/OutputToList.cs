@@ -43,7 +43,7 @@ namespace Ping
             string time = "";
             string address = "";
             bool log = false;
-            StreamWriter SW = new StreamWriter(@"d:\\pingOutput.log");
+            StreamWriter SW = new StreamWriter(@"pingOutput.log");
 
             DialogResult dialogResult = MessageBox.Show("Would you like the input written to a log file?", "Log File", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)

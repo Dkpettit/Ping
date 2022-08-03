@@ -49,7 +49,7 @@ namespace Ping
             if(progressBar1.Value >= progressBar1.Maximum)
             {
                 timer1.Stop();
-                MessageBox.Show("...finished.");
+                MessageBox.Show("...Use the Ping button to get results.");
             }
         }
 

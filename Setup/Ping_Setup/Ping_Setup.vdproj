@@ -832,12 +832,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_403D7043D3E0E32DC343CF936F2EA0B0"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_4E193207ED2A41C5A1216B0C687DF6E9"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1525,6 +1519,12 @@
         "OwnerKey" = "8:_DF880FB500AE13B21C60D315CC2C6F45"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_403D7043D3E0E32DC343CF936F2EA0B0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -1543,6 +1543,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -1559,6 +1575,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -5323,6 +5355,17 @@
             "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_B5475CD79FBE453D873ACF5AF335E743"
+                    {
+                    "Name" = "8:Ping by Dave Pettit"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_D1C6048497A8400F9B4508A053363CDC"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_E98C46C3439F4303BE89BD442E1FA6A6"
@@ -5354,7 +5397,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Ping_Setup"
         "ProductCode" = "8:{B4D82D62-19EE-4974-9513-554F2703866A}"
-        "PackageCode" = "8:{4F1C2B2C-2D32-489E-808B-811FC10B471D}"
+        "PackageCode" = "8:{4FD5F7E4-3DCF-403F-824D-8CF003395BE9}"
         "UpgradeCode" = "8:{35DE0ECE-7D5E-4FE5-B074-AC41EE1E3D1F}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -5367,9 +5410,9 @@
         "ARPHELPLINK" = "8:"
         "Title" = "8:Ping_Setup"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:Default Company Name"
+        "ARPCONTACT" = "8:David Pettit"
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:"
+        "ARPCOMMENTS" = "8:A utility to Ping multiple IP's and URL's"
         "ARPURLINFOABOUT" = "8:"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
@@ -5474,7 +5517,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_9887D1489E914B389CC948C4811AE98E"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_2C7898BBC53D4FC49DCE6D73BF1FBD62"
             {
             "Name" = "8:Ping"
             "Arguments" = "8:"
@@ -5484,6 +5527,20 @@
             "Transitive" = "11:FALSE"
             "Target" = "8:_4E193207ED2A41C5A1216B0C687DF6E9"
             "Folder" = "8:_D2FBD623C0514D0D84788A3FB544CE00"
+            "WorkingFolder" = "8:_E98C46C3439F4303BE89BD442E1FA6A6"
+            "Icon" = "8:_0BEF8BE9CAD144A6A9F1CC528B7B9CAE"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_9887D1489E914B389CC948C4811AE98E"
+            {
+            "Name" = "8:Ping"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_4E193207ED2A41C5A1216B0C687DF6E9"
+            "Folder" = "8:_B5475CD79FBE453D873ACF5AF335E743"
             "WorkingFolder" = "8:_E98C46C3439F4303BE89BD442E1FA6A6"
             "Icon" = "8:_0BEF8BE9CAD144A6A9F1CC528B7B9CAE"
             "Feature" = "8:"
@@ -5889,7 +5946,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_4E193207ED2A41C5A1216B0C687DF6E9"
             {
-            "SourcePath" = "8:..\\..\\Ping\\obj\\Debug\\Ping.exe"
+            "SourcePath" = "8:..\\..\\Ping\\obj\\Release\\Ping.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_E98C46C3439F4303BE89BD442E1FA6A6"
